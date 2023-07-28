@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    
 </head>
-<body   style="background-image: url(./img/clouds-lightning-nature-rain-wallpaper-preview.jpg);background-repeat: no-repeat;background-size: cover;;margin: 0;height: 547px;"><br>
+<body   style="background-image: url(./img/clouds-lightning-nature-rain-wallpaper-preview.jpg);background-repeat: no-repeat;background-size: cover;;margin: 0;background-attachment: fixed;"><br>
     <h1 class="text-center" style="color: rgb(20, 220, 33);">CHECK WEATHER REPORT</h1>
     <div class=" container w-100  col-lg-4 " style="border-radius: 20px; background-color: rgba(255, 255, 255, 0.24); margin-top: 30px; height: 430px;" ><br>
     <!-- <h1 class="text-center">CHECK WEATHER REPORT</h1> -->
@@ -28,7 +28,7 @@
             
                 </div>
     </div>
-   
+    <!-- <img src="./img/1540005.webp" alt=""> -->
 </body>
 <script>
     function weatherData(){
@@ -48,7 +48,9 @@
             result.innerHTML=
 //             `<div class="card" style="width: 18rem;">
 //   <div class="card-body">
-    `<h1 class="card-title " style="text-align: center; ">${place}</h1> <br>
+    
+    ` 
+    <h1 class="card-title " style="text-align: center; ">${place}</h1> <br>
     <h5 class="card-title"  style="text-align: center; "><i class="fa-solid fa-temperature-three-quarters" style="color:red; "></i> ${temp}°C</h5><br>
     <h5 class="card-title"  style="text-align:center;"><i class="fa-solid fa-water"  style="color:blue; "></i>  ${humidity}</h5><br>
     <h5 class="card-title"  style="text-align:center;"><i class="fa-solid fa-wind"  style="color:blue; "></i> ${windSpeed}</h5><br>
